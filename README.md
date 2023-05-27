@@ -1,12 +1,6 @@
 # json-form
 
-[文档地址](https://jsonform.kproxy.corp.kuaishou.com/)  
-## 使用方式
-### 安装 
-```
-// 使用前请设置公司内部源
-yarn add @ks-infra-fe/json-form
-```   
+## 使用方式 
 ### 注册为全局组件  
 ```js  
 import Vue from 'vue'
@@ -56,8 +50,4 @@ formProp = {
   }
 }
 <script>
-```  
-
-## 典型应用
-
-[稳定性平台 - 新建工作流 - 故障注入+流量模拟](https://kstable.corp.kuaishou.com/#/reinforced/guardian/new)
+``` 

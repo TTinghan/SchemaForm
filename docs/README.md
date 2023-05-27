@@ -1,7 +1,6 @@
 # 安装
 
-- 设置镜像源
-`npm config set registry https://npm.corp.kuaishou.com/` or `yarn config set registry https://npm.corp.kuaishou.com/`  
+- 设置镜像源 
 - 安装
 `npm install json-form` or `yarn add json-form`
 

@@ -2,8 +2,8 @@
   "name": "@ks-infra-fe/json-form",
   "version": "0.1.40",
   "types": "./types/index.d.ts",
-  "author": "caiyongji",
-  "repository": "https://git.corp.kuaishou.com/infra-frontend/jsonform.git",
+  "author": "hantingting03",
+  "repository": "",
   "scripts": {
     "serve": "vue-cli-service serve ./src/example.ts",
     "build": "vue-cli-service build --target lib --name JsonForm ./src/main.ts",
