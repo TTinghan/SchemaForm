@@ -1,0 +1,42 @@
+{
+  "name": "@ks-infra-fe/json-form",
+  "version": "0.1.40",
+  "types": "./types/index.d.ts",
+  "author": "caiyongji",
+  "repository": "https://git.corp.kuaishou.com/infra-frontend/jsonform.git",
+  "scripts": {
+    "serve": "vue-cli-service serve ./src/example.ts",
+    "build": "vue-cli-service build --target lib --name JsonForm ./src/main.ts",
+    "example": "vue-cli-service build ./src/example.ts",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs && rsync -az --delete docs/.vuepress/dist/ kproxysite:/home/sites/jsonform",
+    "prepublishOnly": "yarn build && yarn docs:build && git add . && git commit -m '发布新版本' && git push && npm version patch"
+  },
+  "description": "json配置表单，基于element-ui",
+  "main": "dist/JsonForm.umd.js",
+  "dependencies": {},
+  "peerDependencies": {
+    "core-js": "^3.16.0",
+    "element-ui": ">=2.15.5",
+    "vue": ">=2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-plugin-component": "^1.1.1",
+    "async-validator": "1.11.5",
+    "core-js": "^3.16.0",
+    "element-ui": "^2.15.5",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "typescript": "~4.1.5",
+    "vue": "^2.6.14",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^3.5.2",
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-demo-container": "^0.2.0"
+  }
+}
