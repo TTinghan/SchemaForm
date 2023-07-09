@@ -1,5 +1,5 @@
 {
-  "name": "@ks-infra-fe/json-form",
+  "name": "json-form",
   "version": "0.1.40",
   "types": "./types/index.d.ts",
   "author": "hantingting03",
