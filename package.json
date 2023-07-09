@@ -2,7 +2,7 @@
   "name": "json-form",
   "version": "0.1.40",
   "types": "./types/index.d.ts",
-  "author": "hantingting03",
+  "author": "hantingting",
   "repository": "",
   "scripts": {
     "serve": "vue-cli-service serve ./src/example.ts",
